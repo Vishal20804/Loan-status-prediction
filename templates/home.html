@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>Data About</title>
+      <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}">
+      
+    </head>
+    
+    <body >
+     
+      <h2 style="text-align:center;">Loan status approval Prediction</h2>
+    
+       <h3>About The Dataset </h3>
+        <p>Finance companies deals with some kinds of home loans. They may have their presence across urban, semi urban and rural areas. Customer first applies for home loan and after that company validates the customer eligibility for loan..
+          <br>
+          Mostly Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, I have provided a data set to identify the customers segments that are eligible for loan amount so that they can specifically target these customers. Try to automate this Loan Eligibility Process.
+          <br>
+        </p>
+        
+
+
+<h3>1. Gender:</h3>
+<p> Male=1   Female=0</p>
+
+<h3>2. Married:</h3>
+<p>If person is married then No=0 else 1.</p>
+
+<h3>3. Dependents: </h3>
+<p>Number of dependents</p>
+
+<h3>4. Education:</h3> 
+<p>Applicant Education (Graduate:1/ Under Graduate:0).</p>
+
+
+<h3>5. Self_Employed:</h3> 
+<p>Self employed (Y/N)-> yes=1 no=0.</p>
+
+<h3>6. ApplicantIncome:</h3>
+<p> Applicant income example=4583.</p>
+
+<h3>7. CoapplicantIncome:</h3> 
+<p>CoapplicantIncome example=1508.0.</p>
+
+<h3>8. LoanAmount:</h3> 
+<p> Loan amount in thousands.</p>
+
+
+<h3>9. Loan_Amount_Term:</h3> 
+<p>Term of loan in months .example=360.0
+</p>
+
+<h3>10.Credit_History:</h3> 
+<p>credit history meets guidelines if it good then 1.0 else 0.0</p>
+
+
+<h3>11.Property_Area:</h3> 
+<p>Urban/ Semi Urban/ Rural.
+  <br>
+  urban=2 semi urban=1 Rural=0
+</p>
+
+<h3>14. Loan_Status: </h3>
+<p>(Target) Loan approved (Y/N)
+
+</p>
+        
+<br>
+        
+
+        <form action="/predict1" method="post">
+        <input type="submit" value="Click Here For Check Loan Status">
+        </form>
+  
+    </body>
+    
+</body>
+</html>
